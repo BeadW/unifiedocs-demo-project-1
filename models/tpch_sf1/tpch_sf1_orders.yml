@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: tpch_sf1_orders
+    columns:
+      - name: o_orderkey
+      - name: o_cust_key
+      - name: o_orderstatus
+        description: > 
+          'F' if all lineitems of this order have l_linestatus set to 'F'
+          'O' if all lineitems of this order have l_linestatus set to 'O'
+          'P' otherwise
+      - name: o_totalprice
+      - name: o_orderdate
+      - name: o_orderpriority
+      - name: o_clerk
+      - name: o_shippriority
+      - name: o_comment
