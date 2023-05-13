@@ -3,13 +3,6 @@ version: 2
 sources:
   - name: weather
     database: snowflake_sample_data
-    schema: weather
-    tables:
-      - name: daily_14_total
-      - name: daily_16_total
-      - name: hourly_14_total
-      - name: hourly_16_total
-      - name: weather_14_total
   - name: tpch_sf1
     database: snowflake_sample_data
     schema: tpch_sf1
